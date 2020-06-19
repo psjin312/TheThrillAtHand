@@ -1,3 +1,6 @@
+// 작성자 : 2016039002 박성진
+// 설  명 : 회원 목록 보여주기 Fragment
+
 package com.example.TheThrillAtHand.fragment;
 
 import android.content.Context;

@@ -1,3 +1,6 @@
+// 작성자 : 2016039002 박성진
+// 설  명 : layout 가져오기 등 기본 기능 class
+
 package com.example.TheThrillAtHand.activity;
 
 import android.content.pm.ActivityInfo;

@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- 작성자 : 2016039002 박성진 -->
+<!-- 설  명 : 사용자 리스트 보여주기 화면 -->
+
 <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/recyclerView"

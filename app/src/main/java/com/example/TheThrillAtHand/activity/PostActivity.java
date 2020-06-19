@@ -1,3 +1,6 @@
+// 작성자 : 2016039002 박성진
+// 설  명 : 게시글 Firestore 수정, 삭제 등 연동하기
+
 package com.example.TheThrillAtHand.activity;
 
 import android.app.Activity;

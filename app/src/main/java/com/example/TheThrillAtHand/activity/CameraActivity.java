@@ -14,6 +14,9 @@
  * limitations under the License.
  */
 
+// 작성자 : 2016039002 박성진
+// 설  명 : 카메라 작동 기본 OpenSource
+
 package com.example.TheThrillAtHand.activity;
 
 import android.app.Activity;

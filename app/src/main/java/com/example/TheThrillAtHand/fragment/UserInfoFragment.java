@@ -1,25 +1,42 @@
+// 작성자 : 2016039002 박성진
+// 설  명 : 회원정보 보기 Fragment
+
 package com.example.TheThrillAtHand.fragment;
 
+import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.FileProvider;
 import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
 import com.example.TheThrillAtHand.R;
+import com.example.TheThrillAtHand.activity.MainActivity;
+import com.example.TheThrillAtHand.activity.SignUpActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.gun0912.tedpermission.PermissionListener;
+import com.gun0912.tedpermission.TedPermission;
+
+import java.io.IOException;
+import java.util.ArrayList;
 
 public class UserInfoFragment extends Fragment {
     private static final String TAG = "UserInfoFragment";
@@ -31,6 +48,8 @@ public class UserInfoFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
     }
 
     @Override
@@ -43,6 +62,8 @@ public class UserInfoFragment extends Fragment {
         final TextView phoneNumberTextView = view.findViewById(R.id.phoneNumberTextView);
         final TextView birthDayTextView = view.findViewById(R.id.birthDayTextView);
         final TextView addressTextView = view.findViewById(R.id.addressTextView);
+
+
 
         DocumentReference documentReference = FirebaseFirestore.getInstance().collection("users").document(FirebaseAuth.getInstance().getCurrentUser().getUid());
         documentReference.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
@@ -72,6 +93,12 @@ public class UserInfoFragment extends Fragment {
 
         return view;
     }
+
+    private void myStartActivity(Class c) {
+        Intent intent = new Intent(getActivity(), c);
+        startActivityForResult(intent, 0);
+    }
+
 
     @Override
     public void onAttach(Context context) {

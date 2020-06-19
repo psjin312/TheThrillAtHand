@@ -1,3 +1,6 @@
+// 작성자 : 2016039002 박성진
+// 설  명 : 게시글 각종 요소 정보
+
 package com.example.TheThrillAtHand;
 
 import java.io.Serializable;

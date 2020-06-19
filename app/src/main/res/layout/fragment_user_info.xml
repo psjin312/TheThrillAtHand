@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- 작성자 : 2016039002 박성진 -->
+<!-- 설  명 : 회원정보 보여주기 화면 -->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -73,6 +77,12 @@
                     android:layout_margin="5dp"
                     android:textSize="18dp" />
 
+                <Button
+                    android:id="@+id/logoutButton"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="로그아웃" />
+
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
@@ -81,8 +91,8 @@
         android:id="@+id/buttonsBackgroundLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#91646464"
-        android:visibility="gone">
+        android:visibility="visible">
+<!--        android:background="#91646464"-->
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -101,13 +111,18 @@
                     android:id="@+id/picture"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="사진촬영" />
+                    android:text="사진촬영"
+                    android:visibility="gone"
+                    />
+
 
                 <Button
                     android:id="@+id/gallery"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="갤러리" />
+                    android:text="갤러리"
+                    android:visibility="gone"
+                    />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>

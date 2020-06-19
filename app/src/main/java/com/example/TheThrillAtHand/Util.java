@@ -1,3 +1,6 @@
+// 작성자 : 2016039002 박성진
+// 설  명 : 토스트 보여주기 및 스토리지 관련 class
+
 package com.example.TheThrillAtHand;
 
 import android.app.Activity;
@@ -19,9 +22,13 @@ public class Util {
         Toast.makeText(activity, msg, Toast.LENGTH_SHORT).show();
     }
 
+//    public static boolean isStorageUrl(String url){
+//        return Patterns.WEB_URL.matcher(url).matches() && url.contains("https://firebasestorage.googleapis.com/v0/b/sns-project-3e2c2.appspot.com/o/post");
+//    }
     public static boolean isStorageUrl(String url){
-        return Patterns.WEB_URL.matcher(url).matches() && url.contains("https://firebasestorage.googleapis.com/v0/b/sns-project-3e2c2.appspot.com/o/post");
+        return Patterns.WEB_URL.matcher(url).matches() && url.contains("gs://thethrillathand-59948.appspot.com/posts");
     }
+
 
     public static String storageUrlToName(String url){
         return url.split("\\?")[0].split("%2F")[url.split("\\?")[0].split("%2F").length - 1];

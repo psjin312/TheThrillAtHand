@@ -1,3 +1,6 @@
+// 작성자 : 2016039002 박성진
+// 설  명 : 메인 화면에서 다양한 조건 확인 및 작동 Activity
+
 package com.example.TheThrillAtHand.activity;
 
 import android.content.Intent;

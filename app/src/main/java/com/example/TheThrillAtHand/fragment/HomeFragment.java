@@ -1,3 +1,6 @@
+// 작성자 : 2016039002 박성진
+// 설  명 : 글 추가하기 등 게시글 관련 Fragment
+
 package com.example.TheThrillAtHand.fragment;
 
 import android.content.Context;
@@ -126,12 +129,6 @@ public class HomeFragment extends Fragment {
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
-                /*
-                case R.id.logoutButton:
-                    FirebaseAuth.getInstance().signOut();
-                    myStartActivity(SignUpActivity.class);
-                    break;
-                */
                 case R.id.floatingActionButton:
                     myStartActivity(WritePostActivity.class);
                     break;
@@ -184,7 +181,6 @@ public class HomeFragment extends Fragment {
                     }
                 });
     }
-
 
     private void myStartActivity(Class c) {
         Intent intent = new Intent(getActivity(), c);

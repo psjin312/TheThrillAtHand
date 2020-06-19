@@ -1,3 +1,6 @@
+// 작성자 : 2016039002 박성진
+// 설  명 : 사용자 각종 정보
+
 package com.example.TheThrillAtHand;
 
 public class UserInfo {

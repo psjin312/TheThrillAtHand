@@ -1,3 +1,6 @@
+// 작성자 : 2016039002 박성진
+// 설  명 : 회원가입 후 한 번 본인 정보 등록하기
+
 package com.example.TheThrillAtHand.activity;
 
 import android.app.Activity;

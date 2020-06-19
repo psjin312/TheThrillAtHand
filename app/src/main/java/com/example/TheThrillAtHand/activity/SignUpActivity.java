@@ -1,3 +1,6 @@
+// 작성자 : 2016039002 박성진
+// 설  명 : 회원가입 class
+
 package com.example.TheThrillAtHand.activity;
 
 import android.content.Intent;

@@ -1,3 +1,6 @@
+// 작성자 : 2016039002 박성진
+// 설  명 : 로그인 화면에서 작동 관련 Class
+
 package com.example.TheThrillAtHand.activity;
 
 import android.content.Intent;

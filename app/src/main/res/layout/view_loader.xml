@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- 작성자 : 2016039002 박성진 -->
+<!-- 설  명 : 로딩 중 뷰 -->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/loaderLyaout"
     android:layout_width="match_parent"

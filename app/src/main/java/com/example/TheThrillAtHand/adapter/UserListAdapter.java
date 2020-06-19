@@ -1,3 +1,6 @@
+// 작성자 : 2016039002 박성진
+// 설  명 : 유저 목록 뷰 Class
+
 package com.example.TheThrillAtHand.adapter;
 
 import android.app.Activity;

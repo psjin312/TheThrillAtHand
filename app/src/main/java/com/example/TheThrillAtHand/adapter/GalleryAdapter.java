@@ -1,3 +1,6 @@
+// 작성자 : 2016039002 박성진
+// 설  명 : 갤러리 가져오기
+
 package com.example.TheThrillAtHand.adapter;
 
 import android.app.Activity;

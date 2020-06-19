@@ -1,3 +1,6 @@
+// 작성자 : 2016039002 박성진
+// 설  명 : Home View class
+
 package com.example.TheThrillAtHand.adapter;
 
 import android.app.Activity;

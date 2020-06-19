@@ -1,3 +1,6 @@
+// 작성자 : 2016039002 박성진
+// 설  명 : 비밀번호 재설정 관련 Activity
+
 package com.example.TheThrillAtHand.activity;
 
 import android.os.Bundle;

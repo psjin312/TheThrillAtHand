@@ -1,3 +1,6 @@
+// 작성자 : 2016039002 박성진
+// 설  명 : 글 작성 관련 Activity
+
 package com.example.TheThrillAtHand.activity;
 
 import android.app.Activity;
